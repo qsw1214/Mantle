@@ -136,7 +136,7 @@ typedef enum : NSUInteger {
 Whew, that's a lot of boilerplate for something so simple! And, even then, there
 are some problems that this example doesn't address:
 
- * There's no way to update a `GHIssue` with new data from the server.
+ * 从服务器上更新GHIssue是不可能的.
  * There's no way to turn a `GHIssue` _back_ into JSON.
  * `GHIssueState` shouldn't be encoded as-is. If the enum changes in the future,
    existing archives might break.
