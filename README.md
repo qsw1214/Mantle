@@ -137,9 +137,8 @@ Whew, that's a lot of boilerplate for something so simple! And, even then, there
 are some problems that this example doesn't address:
 
  * 从服务器上更新GHIssue是不可能的.
- * There's no way to turn a `GHIssue` _back_ into JSON.
- * `GHIssueState` shouldn't be encoded as-is. If the enum changes in the future,
-   existing archives might break.
+ * 无法将GHIssue转化成JSON
+ * GHIssueState不应该被encoded，因为已经存在的归档可能被损坏.
  * If the interface of `GHIssue` changes down the road, existing archives might
    break.
 
